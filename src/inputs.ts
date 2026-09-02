@@ -26,6 +26,7 @@ export function getInputs(): Inputs {
     workingDirectory: getInput("working-directory") || undefined,
     runInstall: parseRunInstall(getInput("run-install")),
     sfw: getBooleanInput("sfw"),
+    pnpm: getBooleanInput("pnpm"),
     cache: getBooleanInput("cache"),
     cacheDependencyPath: getInput("cache-dependency-path") || undefined,
     registryUrl: getInput("registry-url") || undefined,
